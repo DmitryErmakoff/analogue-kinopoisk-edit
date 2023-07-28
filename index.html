@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кинопоиск</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header_links">
+                <a href="index.html" class="header_text"><h1>Кинопоиск</h1></a>
+                <a href="favorite.html" class="header_text">Избранное</a>
+                <a href="watched.html" class="header_text">Просмотренное</a>
+            </div>
+        </div>
+        <div class="content">
+            <div id="movie-container"></div>
+            <button type="button" id="add-movie-btn">Добавить фильм</button>
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <input type="url" id="image-input" placeholder="Ссылка на изображение">
+                    <input type="text" id="title-input" placeholder="Название">
+                    <input type="date" id="release-date-input" placeholder="Дата">
+                    <button type="button" id="save-movie-btn">Сохранить</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
